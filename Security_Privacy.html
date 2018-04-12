@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Account Settings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="mdb.min.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top special-color-dark navbar-dark ">
+        <!-- Brand/logo -->
+        <div class="navbar-brand logo" style="font-size: 40px"><img src="../RKirk_Website/Images/mechanic_pose_with_big_wrench.png" alt="" style="max-width: 50px;height: auto;"><a href="../RKirk_Website/Alogin_home.html" style="color: white;">One Stop Shop</a></div>
+        <!-- Collapse Button -->
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>-->
+        <!-- Links -->
+        <!--<div class="collapse navbar-collapse" id="collapsibleNavbar">-->
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown"> <a href="../RKirk_Website/Alogin_features.html" style="color: white;">Features</a>
+                <button type="button" class="btn btn-xs indigo dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+                <div class="dropdown-menu"> <a class="dropdown-item" href="../RKirk_Website/Billing_ManagementBS.html">Full Billing Management Software</a> <a class="dropdown-item" href="../RKirk_Website/GpsBS.html">Real-time GPS</a> <a class="dropdown-item" href="../RKirk_Website/HistoryBS.html">Tracking and Full History Lookup</a> <a class="dropdown-item" href="../RKirk_Website/WellnessBS.html">Vehicle Wellness Report</a> <a class="dropdown-item" href="../RKirk_Website/JobTrackingBS.html">Job Tracking App</a> <a class="dropdown-item" href="../RKirk_Website/Real-TimeUpdatesBS.html">Customer App for Real-time Updates and Live Reports</a> </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="../RKirk_Website/Alogin_support.html">Support</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="../RKirk_Website/Alogin_contact.html">Contact</a> </li>
+        </ul>
+        <!-- Right Floating Nav Bar -->
+        <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+            <li class="dropdown order-1">
+                <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-primary dropdown-toggle" style="background-color: #ffffff;">Hi, Name!<span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right text-center">
+                    <li class="p-1">
+                        <li class="nav-item order-2 order-md-1"><a href="../RKirk_Website/AccountSettings.html" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-sm"></i>Account Settings</a></li>
+                        <a class="dropdown-item" href="#">Sign out</a>
+                </ul>
+                </li>
+        </ul>
+    </nav>
+
+    <div class="settings" style="background-color: #1C2331">
+        <h1>Account Settings</h1>
+    </div>
+    <div class="row mx-auto">
+        <div class="col-3">
+            <div class="account_list">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="fa-background">
+                                <div class="input-group-addon"><i class="fa fa-home"></i></div>
+                            </div><a class="nav-link" href="../RKirk_Website/AccountSettings.html" style="margin-left: -3px;">My Account</a></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="fa-background">
+                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                            </div><a class="nav-link" href="Personal_Info.html">Profile</a></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="fa-background">
+                                <div class="input-group-addon"><i class="fa fa-credit-card" style="margin-left: -5px;"></i></div>
+                            </div><a class="nav-link" href="../RKirk_Website/Financial%20Information.html" style="margin-left: -2px;">Financial Information</a></div>
+                    </li>
+                    <li class="list-group-item active">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="fa-background">
+                                <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                            </div><a class="nav-link" href="../RKirk_Website/Security_Privacy.html">Change Password</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Security Questions Form-->
+        <div class="card card-outline-secondary mx-auto" style="margin-top: 20px; width: 350px;">
+            <div class="col-md-12">
+                <div class="form-group row">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Security Questions
+  </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item">What was your childhood nickname?</a>
+                            <a class="dropdown-item">In what city or town did your mother and father meet?</a>
+                            <a class="dropdown-item">What was your favorite food as a child?</a>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="answer" style="margin-left: 25px; margin-top: 10px;">Answer</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Security Questions
+  </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item">What was your childhood nickname?</a>
+                            <a class="dropdown-item">In what city or town did your mother and father meet?</a>
+                            <a class="dropdown-item">What was your favorite food as a child?</a>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="answer" style="margin-left: 25px; margin-top: 10px;">Answer</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Security Questions
+  </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item">What was your childhood nickname?</a>
+                            <a class="dropdown-item">In what city or town did your mother and father meet?</a>
+                            <a class="dropdown-item">What was your favorite food as a child?</a>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="answer" style="margin-left: 25px; margin-top: 10px;">Answer</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-secondary">Save</button>
+            </div>
+        </div>
+
+        
+   
+        
+        
+        
+        
+        
+        
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 boxStyle" style="padding-right: 0px!important;padding-left: 0px!important;">
+		   <div class="panel-body" style="padding-right: 4px!important;padding-left: 4px!important;">
+                 <form method="post" name="challenge"  class="form-horizontal" role="form" action="#" onSubmit="return submitForm()" AUTOCOMPLETE = "off" >
+				<fieldset class="landscape_nomargin" style="min-width: 0;padding:    .35em .625em .75em!important;margin:0 2px;border: 2px solid silver!important;margin-bottom: 10em;">
+			<legend style="border-bottom: none;width: inherit;!important;padding:inherit;" class="legend">Registration Form</legend>
+		
+			<div class="form-group">
+						 <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12" style="text-align: right!important;">
+						 <span style="color: red">*</span> <span style="font-size: 8pt;">mandatory fields</span>
+						 </div>
+						</div>	
+			 <div class="form-group" style="margin-bottom: 0px;">
+                    <div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div><div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad" id="message10" style=" font-size: 10pt;padding-left: 0px;"></div>                      
+
+                    </div>				
+		 <div class="form-group">
+                     <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1"></div>
+                       <div class="col-sm-3 col-md-3 col-lg-4 col-xs-10 mobileLabel" style=" padding-top: 7px; text-align: right;">
+                            Username <span style="color: red">*</span> :</div>
+                        
+						<div class="col-sm-7 col-md-7 col-lg-6 col-xs-9 input-group mobilePad" style="font-weight:600;">
+						
+						<input style="border-radius: 4px!important;" type="text"  class="form-control" name="username" id="username" >                   
+                                         
+                        </div>
+                       <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1"></div>
+                    </div>
+         <div class="form-group">
+                     <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1"></div>
+                       <div class="col-sm-3 col-md-3 col-lg-4 col-xs-10 mobileLabel" style=" padding-top: 7px; text-align: right;">
+                            Your Email <span style="color: red">*</span> :</div>
+                        
+						<div class="col-sm-7 col-md-7 col-lg-6 col-xs-9 input-group mobilePad" style="font-weight:600;">
+						
+						<input style="border-radius: 4px!important;" type="email"  class="form-control" name="yourEmail" id="yourEmail">                   
+                                         
+                        </div>
+                       <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1"></div>
+                    </div> 
+                    
+             <div class="form-group">
+                    	  <div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div>
+                    	  <div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad"  data-toggle="collapse" data-target="#passPolicy" style="font-weight: bold;font-size: 10pt;padding-left: 0px;color: black;cursor: pointer;text-decoration: underline;">Check Password Policy<span class="caret"></span>
+                    	  </div>  
+                    	 </div>
+             <div class="form-group" style="margin-bottom: 0px;!important">
+                    	    <div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div>
+                    	  <div id="passPolicy" class="col-sm-8 col-md-8 col-lg-7 col-xs-10 collapse mobilePad" style="padding-right: 17px;">
+                       <ul type="disc" style="padding-left: 0px;">
+                    	  <li>Your Password must have minimum 6 characters.</li>
+                    	   <li>Your Password must contain at least one number, one uppercase, lowercase & special character.</li>
+                    	  <li>Your Password must not contain your Username.</li>
+                    	  <li>Your Password must not contain Character or Number repetition.</li>
+                    
+                    	  </ul> 
+                    	  </div>
+                    	</div>   
+        <div class="form-group " style="margin-bottom: 5px;">
+                     <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1"></div>
+                       <div class="col-sm-3 col-md-3 col-lg-4 col-xs-10 mobileLabel" style=" padding-top: 7px;text-align: right;">
+                          Your Password <span style="color: red">*</span> :</div>
+                        
+						<div class="col-sm-7 col-md-7 col-lg-6 col-xs-9 input-group mobilePad">
+						
+						<input type="password" onkeyup="passwordChecker()" name="password" id="password" class="form-control"><span class="input-group-btn"><button class="btn btn-defaultCUST" id="view_button3" style=" height: 34px;padding-left: 7px;" type="button"><span class="glyphicon glyphicon-eye-open" ></span>                   
+                             </button></span>                    
+                                      
+                        </div>
+                         <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1"></div>
+                        
+                    </div>  
+                 <div class="form-group" style="margin-bottom: 5px;">
+                    <div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div><div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad" id="message8" style=" font-size: 10pt;padding-left: 0px;"></div>                      
+
+                    		 <div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div><div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad" id="message" style=" font-size: 10pt;"></div>
+							<div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div><div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad" id="message2" style=" font-size: 10pt;"></div>
+							<div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div><div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad" id="message3" style=" font-size: 10pt;"></div>
+							<div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div><div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad" id="message4" style=" font-size: 10pt;"></div>
+							<div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div><div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad" id="message5" style=" font-size: 10pt;"></div> 
+							<div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div><div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad" id="message6" style=" font-size: 10pt;padding-left: 0px;"></div>
+							<div class="col-sm-4 col-md-4 col-lg-5 col-xs-1"></div><div class="col-sm-8 col-md-8 col-lg-7 col-xs-10 mobilePad" id="message7" style=" font-size: 10pt;padding-left: 0px;"></div>                      
+       
+                    </div>
+                  <div class="form-group">
+                     <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1"></div>
+                       <div class="col-sm-3 col-md-3 col-lg-4 col-xs-10 mobileLabel" style=" padding-top: 7px;text-align: right;">
+                          Confirm Your Password <span style="color: red">*</span> :</div>
+                        
+						<div class="col-sm-7 col-md-7 col-lg-6 col-xs-9 input-group mobilePad">
+						
+						<input type="password" name="verifypassword" id="verifypassword" class="form-control"><span class="input-group-btn"><button class="btn btn-defaultCUST" id="view_button4" style=" height: 34px;padding-left: 7px;" type="button"><span class="glyphicon glyphicon-eye-open"></span>                  
+                             </button></span>                     
+                                         
+                        </div>
+                       <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1"></div>
+                    </div>	
+         <div class="form-group">
+                     <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12" id="message1" style="font-weight: bold; text-align: center;font-size: 10pt;">
+						</div>
+						 </div>	            
+        <div class="form-group">
+									<div class="col-sm-1 col-md-1 col-lg-1 col-xs-1"></div>
+									<div class="col-sm-11 col-md-11 col-lg-11 col-xs-10" style="text-align:center;">
+										<button id="valuser" type="button" onclick="submitForm()"
+											class="btn btn-success">
+											Submit</button>
+									</div>
+                    </div>
+                     </fieldset>
+               </form>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    <!--Footer-->
+    <footer class="page-footer stylish-color-dark">
+
+        <!--Footer Links-->
+        <div class="container">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="title mb-4 font-bold">Company name</h6>
+                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <!--/.First column-->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="title mb-4 font-bold">Products</h6>
+                    <p><a href="#!">MDBootstrap</a></p>
+                    <p><a href="#!">MDWordPress</a></p>
+                    <p><a href="#!">BrandFlow</a></p>
+                    <p><a href="#!">Bootstrap Angular</a></p>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="title mb-4 font-bold">Useful links</h6>
+                    <p><a href="#!">Your Account</a></p>
+                    <p><a href="#!">Become an Affiliate</a></p>
+                    <p><a href="#!">Shipping Rates</a></p>
+                    <p><a href="#!">Help</a></p>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="title mb-4 font-bold">Contact</h6>
+                    <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                    <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+            <!-- Footer links -->
+
+            <hr>
+            <div class="row py-3 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-8 col-lg-9">
+
+                    <!--Copyright-->
+                    <p class="text-center text-md-left grey-text">© 2017 Copyright: <a href="https://www.MDBootstrap.com"><strong> MDBootstrap.com</strong></a></p>
+                    <!--/.Copyright-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 col-lg-3 ml-lg-0">
+
+                    <!--Social buttons-->
+                    <div class="social-section text-center text-md-left">
+                        <ul>
+                            <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--/.Social buttons-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+        </div>
+    </footer>
+    <!--/.Footer-->
+</body>
+
+</html>

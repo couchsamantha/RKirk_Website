@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Account Settings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="mdb.min.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top special-color-dark navbar-dark ">
+        <!-- Brand/logo -->
+        <div class="navbar-brand logo" style="font-size: 40px"><img src="../RKirk_Website/Images/mechanic_pose_with_big_wrench.png" alt="" style="max-width: 50px;height: auto;"><a href="../RKirk_Website/Alogin_home.html" style="color: white;">One Stop Shop</a></div>
+        <!-- Collapse Button -->
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>-->
+        <!-- Links -->
+        <!--<div class="collapse navbar-collapse" id="collapsibleNavbar">-->
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown"> <a href="../RKirk_Website/Alogin_features.html" style="color: white;">Features</a>
+                <button type="button" class="btn btn-xs indigo dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+                <div class="dropdown-menu"> <a class="dropdown-item" href="../RKirk_Website/Billing_ManagementBS.html">Full Billing Management Software</a> <a class="dropdown-item" href="../RKirk_Website/GpsBS.html">Real-time GPS</a> <a class="dropdown-item" href="../RKirk_Website/HistoryBS.html">Tracking and Full History Lookup</a> <a class="dropdown-item" href="../RKirk_Website/WellnessBS.html">Vehicle Wellness Report</a> <a class="dropdown-item" href="../RKirk_Website/JobTrackingBS.html">Job Tracking App</a> <a class="dropdown-item" href="../RKirk_Website/Real-TimeUpdatesBS.html">Customer App for Real-time Updates and Live Reports</a> </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="../RKirk_Website/Alogin_support.html">Support</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="../RKirk_Website/Alogin_contact.html">Contact</a> </li>
+        </ul>
+        <!-- Right Floating Nav Bar -->
+        <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+            <li class="dropdown order-1">
+                <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-primary dropdown-toggle" style="background-color: #ffffff;">Hi, Name!<span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right text-center">
+                    <li class="p-1">
+                        <li class="nav-item order-2 order-md-1"><a href="AccountSettings.html" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-sm"></i>Account Settings</a></li>
+                        <a class="dropdown-item" href="#">Sign out</a>
+                </ul>
+                </li>
+        </ul>
+    </nav>
+
+    <div class="settings" style="background-color: #1C2331;">
+        <h1>Account Settings</h1>
+    </div>
+    <div class="row mx-auto">
+        <div class="col-3">
+            <div class="account_list">
+                <ul class="list-group">
+                    <li class="list-group-item active">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="fa-background">
+                                <div class="input-group-addon"><i class="fa fa-home"></i></div>
+                            </div><a class="nav-link" href="AccountSettings.html" style="margin-left: -3px;">My Account</a></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="fa-background">
+                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                            </div><a class="nav-link" href="Personal_Info.html">Profile</a></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="fa-background">
+                                <div class="input-group-addon"><i class="fa fa-credit-card" style="margin-left: -5px;"></i></div>
+                            </div><a class="nav-link" href="Financial%20Information.html" style="margin-left: -2px;">Financial Information</a></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="fa-background">
+                                <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                            </div><a class="nav-link" href="Security_Privacy.html">Change Password</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="page-title">
+                <h2 class="page-title-text">My Account</h2>
+                <p class="page-title-note">Control, protect, and secure your account.</p>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th scope="row" class="font-weight-bold">Name</th>
+                        <td>Samuel</td>
+                        <td><a href="../RKirk_Website/Personal_Info.html"><button type="button" class="btn btn-mini btn-tertiary accordion-btn-edit accordion-trigger-expand">Edit</button></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="font-weight-bold">Email</th>
+                        <td>blank@gmail.com</td>
+                        <td><a href="../RKirk_Website/Personal_Info.html"><button type="button" class="btn btn-mini btn-tertiary accordion-btn-edit accordion-trigger-expand">Edit</button></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="font-weight-bold">Password</th>
+                        <td>...</td>
+                        <td><a href="../RKirk_Website/Security_Privacy.html"><button type="button" class="btn btn-mini accordion-btn-edit accordion-trigger-expand" aria-pressed="true">Edit</button></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="font-weight-bold">Company Name</th>
+                        <td>RKirk Enterprises</td>
+                        <td><a href="../RKirk_Website/Personal_Info.html"><button type="button" class="btn btn-mini btn-tertiary accordion-btn-edit accordion-trigger-expand">Edit</button></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--  <div class = "form-table has-row-lines accordion">
+        <div class = "form-table-body">
+            <table>
+            <colgroup>
+                <col style = "width: 180px;">
+                <col>
+                </colgroup>
+            <tbody>
+                <!--Name-->
+    <!-- <tr class = "accordion-cell">
+                    <td>
+                        <label class = "form-table-label">Name</label>
+                    </td>
+                    <div class = "accordion-collasped">
+                    <div id = "editNameTitle" class = "form-table-value">Samuel</div>
+                        <button type = "button" class = "btn btn-mini btn-tertiary accordion-btn-edit accordion-trigger-expand">Edit</button>
+                        <div id = "displayMode" class = "form-table-value-detail">Display as Anonymous</div>
+                        
+                    
+
+                
+                
+                
+                </tbody>
+            </table>
+            </div>
+        </div>
+            </div>
+        
+        
+        
+        
+        
+        
+            <!-- <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Information
+                </div>
+                 </div>
+        </div>
+        
+        <!--card information-->
+    <!-- <div class="col-md-5">
+            <div class="card">
+                <div class="card-header">
+                    Your Credit and Debit Card(s)
+                </div>
+                <div class="col-md-12">
+                    <div id="accordion" role="tablist" aria-multiselectable="true" style="margin-top: 10px;">
+                        <div class="card" style="margin-bottom: 10px;">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="img-fluid cc-img" src="../Bootstrap/Images/Visa-icon.png" style="height: 50px; width: auto;"> ****
+                                                <div class="h6" style="float:right;">Expires: **/**</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="card-block">
+                                    <div class="card-text" style="margin-left: 10px;">
+                                        Name on Card
+                                        <p>Name</p>
+                                    </div>
+                                    <a href="#" button type="button" class="btn btn-sm indigo" style="float: right;">Delete</a>
+                                    <a href="#" button type="button" class="btn btn-sm indigo" style="float: right;">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-bottom: 10px;">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="img-fluid cc-img" src="../Bootstrap/Images/American-Express-icon.png" style="height: 50px; width: auto;"> ****
+                                                <div class="h6" style="float:right;">Expires: **/**</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="card-block">
+                                    <div class="card-text" style="margin-left: 10px;">
+                                        Name on Card
+                                        <p>Name</p>
+                                    </div>
+                                    <a href="#" button type="button" class="btn btn-sm indigo" style="float: right;">Delete</a>
+                                    <a href="#" button type="button" class="btn btn-sm indigo" style="float: right;">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-bottom: 10px;">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="img-fluid cc-img" src="../Bootstrap/Images/mastercard.png" style="height: 50px; width: auto;"> ****
+                                                <div class="h6" style="float:right;">Expires: **/**</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="card-block">
+                                    <div class="card-text" style="margin-left: 10px;">
+                                        Name on Card
+                                        <p>Name</p>
+                                    </div>
+                                    <a href="#" button type="button" class="btn btn-sm indigo" style="float: right;">Delete</a>
+                                    <a href="#" button type="button" class="btn btn-sm indigo" style="float: right;">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--card information ends-->
+
+
+    <!--Footer-->
+    <footer class="page-footer stylish-color-dark">
+
+        <!--Footer Links-->
+        <div class="container">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="title mb-4 font-bold">Company name</h6>
+                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <!--/.First column-->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="title mb-4 font-bold">Products</h6>
+                    <p><a href="#!">MDBootstrap</a></p>
+                    <p><a href="#!">MDWordPress</a></p>
+                    <p><a href="#!">BrandFlow</a></p>
+                    <p><a href="#!">Bootstrap Angular</a></p>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="title mb-4 font-bold">Useful links</h6>
+                    <p><a href="#!">Your Account</a></p>
+                    <p><a href="#!">Become an Affiliate</a></p>
+                    <p><a href="#!">Shipping Rates</a></p>
+                    <p><a href="#!">Help</a></p>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="title mb-4 font-bold">Contact</h6>
+                    <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                    <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+            <!-- Footer links -->
+
+            <hr>
+            <div class="row py-3 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-8 col-lg-9">
+
+                    <!--Copyright-->
+                    <p class="text-center text-md-left grey-text">© 2017 Copyright: <a href="https://www.MDBootstrap.com"><strong> MDBootstrap.com</strong></a></p>
+                    <!--/.Copyright-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 col-lg-3 ml-lg-0">
+
+                    <!--Social buttons-->
+                    <div class="social-section text-center text-md-left">
+                        <ul>
+                            <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--/.Social buttons-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+        </div>
+    </footer>
+    <!--/.Footer-->
+</body>
+
+</html>

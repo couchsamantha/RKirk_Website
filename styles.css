@@ -1,0 +1,313 @@
+/* CSS Document */
+
+.icon {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    /* [disabled]text-align: center; */
+}
+
+.dropdown-menu a:hover {
+    background-color: #283593 !important;
+}
+
+
+
+@media(min-width: 768px) {
+    .field-label-responsive {
+        padding-top: .5rem;
+        text-align: right;
+    }
+}
+
+
+
+.FAQ {}
+
+.FAQ h3 {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+div[class*='col-'] {
+    padding: 0 30px;
+}
+
+.wrap {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+a:focus,
+a:hover,
+a:active {
+    outline: 0;
+    text-decoration: none;
+}
+
+.panel {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    background: none;
+    box-shadow: none;
+}
+
+.panel:last-child {
+    border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+    border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+    margin-top: 0;
+}
+
+.panel-heading {
+    background-color: #0072AE;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    padding: 0;
+}
+
+.panel-title a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.panel-body {
+    background: #fff;
+}
+
+.panel:last-child .panel-body {
+    border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+    border-radius: 0 0 4px 4px;
+    transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+    border-radius: 0;
+    transition: border-radius linear 0s;
+}
+
+/* #bs-collapse icon scale option */
+
+.panel-heading a:before {
+    content: '\e146';
+    position: absolute;
+    font-family: 'Material Icons';
+    right: 5px;
+    top: 10px;
+    font-size: 24px;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.panel-heading.active a:before {
+    content: ' ';
+    transition: all 0.5s;
+    transform: scale(0);
+}
+
+#bs-collapse .panel-heading a:after {
+    content: ' ';
+    font-size: 24px;
+    position: absolute;
+    font-family: 'Material Icons';
+    right: 5px;
+    top: 10px;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+
+#bs-collapse .panel-heading.active a:after {
+    content: '\e909';
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+/* #accordion rotate icon option */
+
+#accordion .panel-heading a:before {
+    content: '\e316';
+    font-size: 24px;
+    position: absolute;
+    font-family: 'Material Icons';
+    right: 5px;
+    top: 10px;
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+#accordion .panel-heading.active a:before {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+
+.row-color {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    background: #093028;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #237A57, #093028);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #237A57, #093028);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-xs {
+    padding: 5px 10px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.settings {
+    padding: 15px;
+}
+
+.settings h1 {
+    font-size: 25px;
+    color: white;
+}
+
+.account_list {
+    margin-left: -30px;
+    float: left;
+}
+
+.fa-background .input-group-addon {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 1.5rem;
+}
+
+.list-group-item.active {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+.bigicon {
+    font-size: 20px;
+    color: #36A0FF;
+}
+
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.antispammessage {
+    padding: 10px;
+    border: 1px solid #AAA;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.antispamquestion {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.accordion-btn-edit {
+    float: right;
+}
+
+.btn-mini {
+    padding: 6px .85em;
+    outline: 0;
+    border: 1px solid #d9d9d9;
+    font-size: 12px;
+}
+
+.page-title {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.page-title-text {
+    font: 400 32px 'Open Sans Condensed', 'Helvetica Narrow', arial, helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.page-title-note {
+    margin-top: 5px;
+    color: #707070;
+    text-transform: uppercase;
+}
+
+
+.form-check-inline {
+    margin-left: 4rem !important;
+    margin-right: 4rem !important;
+}
+
